@@ -1,0 +1,331 @@
+#List
+
+lst = ["Divya",12,58.9]
+
+lst
+
+['Divya', 12, 58.9]
+
+lst.append("google")
+
+lst
+['Divya', 12, 58.9, 'Divya', 'Divya', 'google']
+lst.clear()
+
+lst
+[]
+
+lst = ["Divya",67.5,90,1000,sree"]
+
+a = lst.copy()
+
+a
+['Divya', 67.5, 90, 1000, 'sree']
+
+lst = ["Divya",67.5,90,1000,"sree"]
+
+x = lst.count("google")
+
+lst.count(67.5)
+1
+
+lst1 =[6,7,8,9,10]
+
+lst.extend(lst1)
+
+fruits = ["apple","guava","papaya"]
+
+cartoons = ["doraemon", "shinchan","ninja hattori"]
+
+fruits.extend(cartoons)
+
+fruits
+
+lst
+['Divya',
+ 67.5,
+ 90,
+ 1000,
+ 'google',
+ 'Divya',
+ 67.5,
+ 90,
+ 1000,
+ 'google',
+ 6,
+ 7,
+ 8,
+ 9,
+ 10]
+
+lst3 = ["Divya",75,225.7,0000,"python"]
+
+x
+1
+
+lst3
+['Divya', 75, 225.7, 0000, 'python']
+
+lst1
+[1, 2, 3, 4, 5]
+
+lst3
+['Divya', 75, 225.7, 0000, 'python']
+
+lst
+['Divya',
+ 67.5,
+ 90,
+ 1000,
+ 'google',
+ 'Divya',
+ 67.5,
+ 90,
+ 1000,
+ 'python',
+ 1,
+ 2,
+ 3,
+ 4,
+ 5]
+
+lst3.insert(2,"sree")
+
+lst3
+['Divya', 75, 'sreey',sree '', 225.7, 0000, 'python', 'sree']
+
+lst3.pop(1)
+75
+
+lst3
+['Divya', 'sreey', 'sree', 225.7, 0000, 'python', 'sree']
+
+lst3.remove("sreey")
+
+lst3
+['Divya', 'sree', 225.7,0000, 'python', 'sree']
+
+lst3.reverse()
+
+lst3
+['sree', 'python', 0000, 225.7, 'sree', 'Divya']
+
+lst1.sort()
+
+lst1
+[1, 2, 3, 4, 5]
+
+# Dictionary
+
+dit = {"name": "Divya", "age": "21", "email": "Divya@gmail.com"}
+
+dit.clear()
+
+dit
+{}
+
+dit ={"name":"Divya","age":"21","email":"Divya@gmail.com"}
+
+x=dit.copy()
+
+x
+{'name': 'Divya', 'age': '21', 'email': 'Divya@gmail.com'}
+
+y = 0
+
+dit1=dit.fromkeys(x,y)
+
+dit1
+{'name': 0, 'age': 0, 'email': 0}
+
+z=dit.get("name")
+
+z
+'Divya'
+
+z=dit.items()
+
+z
+dict_items([('name', 'Divya'), ('age', '21'), ('email', 'Divya@gmail.com')])
+
+z=dit.keys()
+
+z
+dict_keys(['name', 'age', 'email'])
+
+dit.pop("email")
+'Divya@gmail.com'
+
+dit.popitem()
+('age', '21')
+
+z=dit.setdefault("age","19")
+
+z
+'19'
+
+dit.update({"city":"chennai"})
+
+dit
+{'name': 'Divya', 'age': '19', 'city': 'chennai'}
+
+dit.values()
+dict_values(['Divya', '19', 'chennai'])
+
+# Sets
+
+set = {"Divya","python",1,6,8,3,6,4,3}
+
+set.add("website")
+
+set
+{1, 3, 4, 6, 8, 'Divya', 'website', 'python'}
+
+set.clear()
+
+set
+set()
+
+set ={"Divya","website","python",1,4,3,2,6}
+
+set
+{1, 2, 3, 4, 6, 'Divya', 'website', 'python'}
+
+x=set.copy()
+
+x
+{1, 2, 3, 4, 6, 'Divya', 'website', 'python'}
+
+y = {"c","c++","java","python",1}
+
+y
+{1, 'c', 'c++', 'java', 'python'}
+
+z=x.difference(y)
+
+z
+{2, 3, 4, 6, 'Divya', 'website'}
+
+x.difference_update(y)
+
+x
+{2, 3, 4, 6, 'Divya', 'website'}
+
+x.discard(6)
+
+x
+{2, 3, 4, 'Divya', 'website'}
+
+z=x.intersection(y)
+
+z
+set()
+
+x={1,2,3,4,5}
+
+y={1,6,7,8,9}
+
+z=x.intersection(y)
+
+z
+{1}
+
+x.intersection_update(y)
+
+x
+{1}
+
+y={6,7,8,9,10}
+
+z=x.isdisjoint(y)
+
+z
+True
+
+y={1,6,7,8,9}
+
+z=x.isdisjoint(y)
+
+z
+False
+
+z=x.issubset(y)
+
+z
+True
+
+z=x.issuperset(y)
+
+z
+False
+
+y.pop()
+1
+
+y.remove(7)
+
+y
+{6, 8, 9}
+
+z=x.symmetric_difference(y)
+
+z
+{1, 6, 8, 9}
+
+x.symmetric_difference_update(y)
+
+x
+{1, 6, 8, 9}
+
+z=x.union(y)
+
+z
+{1, 6, 8, 9}
+
+x.update(y)
+
+x
+{1, 6, 8, 9}
+
+# Tuple
+
+tup =("Divya","*","google")
+
+tup.count("google")
+1
+
+tup.count("*")
+1
+
+tup.index("*")
+1
+
+# String
+
+txt="Hello my name is Divya."
+
+txt.capitalize()
+'Hello my name is Divya.'
+
+txt.casefold()
+'hello my name is Divya.'
+
+txt.center(12)
+'Hello my name is Divya.'
+
+txt1 = "Divya"
+
+txt1.center(40)
+' hello my name is Divya.'
+
+txt.count("l")
+2
+
+txt.encode()
+b'Hello my name is Divyasree.'
+
+txt.endswith(".")
+True
+
+txt1.endswith(".")
+False
